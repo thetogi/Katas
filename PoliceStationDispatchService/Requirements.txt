@@ -1,0 +1,11 @@
+﻿Design and write a dispatching service for a small Police Station. 
+The station has 4 teams, each with a car.
+The Service will receive a notification when an incoming call occurs, with each call having a priority assigned of Low, Medium, or High. 
+The service will also receive a notification when a team has returned from a call.
+
+- The service should assign/dispatch a specific team for each incoming call
+- If there are more calls than teams available, the calls should be queued until a team returns.
+- Queued calls should be filled in priority order first, if multiple calls exist with the same priority the oldest call should be handled first.
+-(Resolved using queue, FIFO) The team that should be dispatched is the one with the longest idle time.
+-(Resolved) One team should always remain at the station 
+- Unless a call needs handling with a priority level of High
